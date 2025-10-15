@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario — GamingCenter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-grid">
+    <header class="site-header small-header" role="banner">
+      <div class="header-inner">
+        <h1>GamingCenter</h1>
+        <p class="lead">Formulario de Suscripción</p>
+      </div>
+    </header>
+
+    <main class="content" role="main">
+      <section class="card form-page">
+        <h2>Suscríbete a GamingCenter</h2>
+        <p>Rellena el formulario para recibir noticias sobre torneos, talleres y eventos.</p>
+        <form class="subscribe-form full-form" action="#" method="post">
+          <div class="form-row">
+            <label for="nombre2">Nombre completo</label>
+            <input id="nombre2" name="nombre" type="text" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-row">
+            <label for="email2">Correo electrónico</label>
+            <input id="email2" name="email" type="email" placeholder="tu@ejemplo.com" required />
+          </div>
+          <div class="form-row">
+            <label for="interes">¿Qué te interesa?</label>
+            <select id="interes" name="interes">
+              <option value="torneos">Torneos</option>
+              <option value="streaming">Streaming / Contenido</option>
+              <option value="voluntariado">Voluntariado</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn">Enviar suscripción</button>
+            <a class="btn-outline" href="index.html">Regresar a la página principal</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>GamingCenter</strong> — Gracias por apoyar la comunidad gaming.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.querySelector('.subscribe-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Suscripción enviada. ¡Gracias! (demo)');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

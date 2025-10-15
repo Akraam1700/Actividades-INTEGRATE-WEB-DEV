@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GamingCenter — Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-grid">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <h1>GamingCenter</h1>
+        <p class="lead">Conectamos jugadores, torneos y comunidad — impulsa tu experiencia gaming.</p>
+        <p class="mission">Nuestra misión: promover el juego responsable, los eventos locales y el desarrollo de talento en la escena gaming.</p>
+        <a class="cta-primary" href="#como-ayudar">Únete</a>
+      </div>
+    </header>
+
+    <main id="main" class="content" role="main">
+      <section id="acerca-de" class="card">
+        <h2>Acerca de Nosotros</h2>
+        <p>
+          GamingCenter es una organización comunitaria dedicada a crear espacios seguros y competitivos
+          para jugadores de todas las edades. Organizamos torneos, talleres y sesiones de coaching
+          para ayudar a la comunidad a mejorar y conectar.
+        </p>
+      </section>
+
+      <section id="como-ayudar" class="card">
+        <h2>Cómo Puedes Ayudar</h2>
+        <ul class="how-to-help">
+          <li>Participa en nuestros eventos y torneos.</li>
+          <li>Hazte voluntario para coordinar partidas o streams locales.</li>
+          <li>Comparte y promueve nuestras actividades en redes sociales.</li>
+        </ul>
+      </section>
+
+      <section id="testimonios" class="card">
+        <h2>Testimonios</h2>
+        <div class="testimonials">
+          <article class="testimonial">
+            <p class="quote">"Gracias a GamingCenter mejoré mis habilidades y conocí a mi equipo competitivo."</p>
+            <p class="author">— Luis, jugador competitivo</p>
+          </article>
+          <article class="testimonial">
+            <p class="quote">"Los talleres me ayudaron a iniciarme en el streaming y crear contenido."</p>
+            <p class="author">— María, streamer</p>
+          </article>
+          <article class="testimonial">
+            <p class="quote">"Eventos organizados, ambiente inclusivo y mucho aprendizaje para jóvenes."</p>
+            <p class="author">— Carlos, entrenador</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="galeria" class="card">
+        <h2>Galería</h2>
+        <div class="image-row">
+          <figure class="img-wrap"><img src="Images/nuevo_evento.jpg" alt="Evento GamingCenter" /><figcaption>Evento local</figcaption></figure>
+          <figure class="img-wrap"><img src="Images/nuevo_torneo.png" alt="Torneo GamingCenter" /><figcaption>Torneo</figcaption></figure>
+          <figure class="img-wrap"><img src="Images/nueva_comunidad.png" alt="Comunidad GamingCenter" /><figcaption>Comunidad</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="suscripcion" class="card">
+        <h2>Suscríbete</h2>
+        <p>Únete a nuestra comunidad para recibir las últimas noticias, torneos y eventos exclusivos.</p>
+        <div class="form-link-wrapper always-visible">
+          <a class="btn" href="formulario.html">Ir al formulario de suscripción</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>GamingCenter</strong> — Contacto: contacto@gamingcenter.example • Tel: (787) 555-1234</p>
+        <p class="small">© <span id="year"></span> GamingCenter. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
